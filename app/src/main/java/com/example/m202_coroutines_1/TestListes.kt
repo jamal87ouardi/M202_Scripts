@@ -3,10 +3,6 @@ package com.example.m202_coroutines_1
 
 
 
-
-
-
-
     fun main() {
 
         val numbers = ArrayList<Int>()

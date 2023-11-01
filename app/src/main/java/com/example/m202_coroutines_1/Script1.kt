@@ -9,7 +9,7 @@ fun main() {
 
     runBlocking {
         delay(10000L)
-
+        println("Données reçues")
     }
 
     println("ok")

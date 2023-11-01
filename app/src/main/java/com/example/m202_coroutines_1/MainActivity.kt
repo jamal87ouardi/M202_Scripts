@@ -24,19 +24,13 @@ class MainActivity : AppCompatActivity() {
 
         tv.setText("Download Complete")
 
-        Thread.sleep(5000L)
+        */
 
-        var tv = findViewById<TextView>(R.id.textView)
-
-        tv.setText("Download Complete") */
-
-         GlobalScope.launch(Dispatchers.Main) {
+         GlobalScope.launch {
 
             delay(7000L)
 
-            var tv = findViewById<TextView>(R.id.textView)
-
-            tv.setText("Download Complete")
+            getData()
 
 
         }
@@ -53,6 +47,13 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+    }
+
+    fun getData() {
+
+        var tv = findViewById<TextView>(R.id.textView)
+
+        tv.setText("Download Complete")
 
     }
 }
